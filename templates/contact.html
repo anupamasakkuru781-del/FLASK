@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+
+                <h3 class="text-center mb-4">Contact Us</h3>
+
+                <form method="POST">
+
+                    <div class="mb-3">
+                        <label>Username</label>
+                        <input
+                            type="text"
+                            name="username"
+                            class="form-control"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Message</label>
+                        <textarea
+                            name="message"
+                            rows="5"
+                            class="form-control"
+                            required></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary w-100">
+                        Contact
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

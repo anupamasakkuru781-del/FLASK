@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Dasboard{% endblock %}
+{% block content %}
+
+
+<div class="row justify-content-center height-auto ">
+  <div class="col-md-8 col-lg-7">
+    <div class="card shadow-sm">
+      <div class="card-body dashboard-card"></div>
+        <h4 style="color: white;">Dashboard</h4>
+        <button class="btn" ><a href="{{ url_for('addnote') }}">Add Note</a></button>
+        <button class="btn" ><a href="{{ url_for('viewall') }}">View Notes</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

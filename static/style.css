@@ -1,0 +1,233 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+min-height:100vh;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#eef2ff,#f8fafc);
+}
+
+/* ==========================
+Navbar
+========================== */
+
+.navbar{
+background:#0f172a !important;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+font-size:28px;
+font-weight:700;
+color:#fff !important;
+}
+
+.nav-link{
+color:#fff !important;
+font-weight:500;
+margin-left:10px;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#facc15 !important;
+}
+
+/* ==========================
+Main Container
+========================== */
+
+main.container{
+margin-top:30px;
+}
+
+/* ==========================
+Cards
+========================== */
+
+.card{
+border:none;
+border-radius:20px;
+overflow:hidden;
+background:white;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card-title{
+color:#0f172a;
+font-weight:700;
+}
+
+.card-body{
+padding:25px;
+}
+
+/* ==========================
+Forms
+========================== */
+
+form{
+background:white;
+border-radius:20px;
+}
+
+.form-control{
+border-radius:12px;
+border:2px solid #e2e8f0;
+}
+
+.form-control:focus{
+border-color:#2563eb;
+box-shadow:0 0 0 0.2rem rgba(37,99,235,.15);
+}
+
+/* ==========================
+Buttons
+========================== */
+
+.btn{
+border-radius:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+background:#2563eb;
+border:none;
+}
+
+.btn-primary:hover
+
+.btn-success{
+background:#16a34a;
+border:none;
+}
+
+.btn-success:hover
+
+.btn-warning{
+border:none;
+}
+
+.btn-danger{
+border:none;
+}
+
+/* ==========================
+Alerts
+========================== */
+
+.alert{
+border:none;
+border-radius:12px;
+}
+
+/* ==========================
+Dashboard
+========================== */
+
+.dashboard-card{
+background:url("../images/image.jpg");
+background-size:cover;
+background-position:center;
+min-height:250px;
+color:white;
+}
+
+.dashboard-card h4{
+color:white;
+font-size:32px;
+margin-bottom:20px;
+}
+
+.dashboard-btn{
+margin-right:10px;
+}
+
+/* ==========================
+Notes
+========================== */
+
+.note-card{
+margin-bottom:20px;
+}
+
+.note-card .card-title{
+color:#1e293b;
+}
+
+.note-card .card-text{
+color:#64748b;
+}
+
+/* ==========================
+Footer
+========================== */
+
+footer{
+background:#0f172a;
+color:white;
+}
+
+footer strong{
+color:#facc15;
+}
+
+/* ==========================
+About Page
+========================== */
+
+.about-section{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.about-section h2{
+color:#0f172a;
+margin-bottom:20px;
+}
+
+.about-section ul{
+padding-left:20px;
+}
+
+/* ==========================
+Contact Page
+========================== */
+
+.contact-card{
+max-width:700px;
+margin:auto;
+}
+
+/* ==========================
+Mobile
+========================== */
+
+@media(max-width:768px){
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.dashboard-card{
+    min-height:180px;
+}
+.dashboard-card h4{
+    font-size:24px;
+}
+}
