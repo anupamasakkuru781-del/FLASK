@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <h1>Dashboard</h1>
+
+    <p><strong>Name:</strong> {{ data.name }}</p>
+
+    <p><strong>Account Number:</strong> {{ acc_no }}</p>
+
+    <p><strong>Balance:</strong> ₹{{ data.balance }}</p>
+
+    <hr>
+
+    <h2>Deposit Money</h2>
+
+    <form action="/deposit" method="POST">
+
+        <input type="hidden" name="acc_no" value="{{ acc_no }}">
+
+        <label>Amount:</label>
+
+        <input type="number" name="amount" required>
+
+        <button type="submit">Deposit</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Withdraw Money</h2>
+
+    <form action="/withdraw" method="POST">
+
+        <input type="hidden" name="acc_no" value="{{ acc_no }}">
+
+        <label>Amount:</label>
+
+        <input type="number" name="amount" required>
+
+        <button type="submit">Withdraw</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Delete Account</h2>
+
+    <form action="/delete" method="POST">
+
+        <input type="hidden" name="acc_no" value="{{ acc_no }}">
+
+        <button type="submit">
+            Delete Account
+        </button>
+
+    </form>
+
+    <hr>
+
+    <a href="/">Go Back Home</a>
+
+</body>
+</html>
