@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Data</title>
+</head>
+<body>
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <th>sid</th>
+            <th>sname</th>
+            <th>sbranch</th>
+            <th>smarks</th>
+            <th>spno</th>
+            <th colspan="2">Actions</th>
+        </tr>
+
+
+        {%for s in students%}
+
+            <tr>
+                <td>{{s[0]}}</td>
+                <td>{{s[1]}}</td>
+                <td>{{s[2]}}</td>
+                <td>{{s[3]}}</td>
+                <td>{{s[4]}}</td>
+                <td><a href="/edit/{{s[0]}}">Update</a></td>
+                <td><a href="/delete/{{s[0]}}">Delete</a></td>
+            </tr>
+
+        {%endfor%}
+
+
+
+    </table>
+<br><br>
+    <h1><a href="/">Register</a></h1>
+</body>
+</html>

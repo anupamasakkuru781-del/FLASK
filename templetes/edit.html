@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <form action="/update" method="post">
+        <input type="number" name="sid" value="{{student[0]}}" id="" readonly> <br><br>
+        <input type="text" name="sname" value="{{student[1]}}" id="" placeholder="Enter name" required> <br><br>
+        <input type="text" name="sbranch" value="{{student[2]}}" id="" placeholder="enter branch" required><br><br>
+        <input type="number" name="smarks" value="{{student[3]}}" id="" placeholder="enter marks" required> <br><br>
+        <input type="number" name="spno" value="{{student[4]}}" id="" placeholder="Enter pno" required> <br><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
